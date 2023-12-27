@@ -1,0 +1,58 @@
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color: green;
+}
+
+/* classes */
+
+.paragraph{
+    background-color: #000;
+    color: lime;
+}
+
+/* ids */
+
+#exclusive-title{
+    background-color: blueviolet;
+    color: yellow;
+    padding: 10px;
+}
+
+/* ordem das regras */
+h2{
+    border-bottom: 2px solid red;
+}
+
+.titulo{
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 4px solid green;
+}
+
+/* Nome de cores */
+.color-name{
+    color: #165a5a;
+}
+
+/* HEX */
+.hex{
+    color: #991033;
+}
+
+/* mais sobre hex */
+
+/* Red / Green / Blue */
+/* Escala HEX: {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F} // Escuro >> Claro */
+.simple-hex{
+    color: #913;
+}
+
+.simple-hex-2{
+    color: #3E3;
+    background-color: #060;
+}
