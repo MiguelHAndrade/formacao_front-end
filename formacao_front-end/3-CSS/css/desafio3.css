@@ -1,0 +1,16 @@
+#box-model{
+    margin: 30px;
+    padding: 10px;
+    border: 2px solid #F00;
+    border-radius: 5px;
+    width: 100px;
+    height: 200px;
+    background-color: #f57;
+    color: #B00;
+    outline: 4px solid #f77;
+}
+
+.ttl{
+    color: beige;
+    background-color: #F67;
+}

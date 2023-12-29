@@ -165,3 +165,42 @@ h2{
     padding: 10px;
     width: 40px;
 }
+
+/* border individual */
+.border-left{
+    border-left: 3px solid orange;
+    background-color: olive;
+    padding: 25px;
+}
+
+.border-btm{
+    border-bottom: 5px dotted darkmagenta;
+    background-color: lightsalmon;
+    padding: 10px;
+}
+
+/* border radius */
+.rounded{
+    border: 4px solid #00F;
+    background-color: #000;
+    color: #55D;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* margem */
+.mrgn{
+    margin: 15px;
+    background-color: #00B;
+    color: #FFF;
+}
+
+/* box model */
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #0F0;
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+}
