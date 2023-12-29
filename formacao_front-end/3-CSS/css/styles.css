@@ -204,3 +204,29 @@ h2{
     width: 200px;
     height: 200px;
 }
+
+/* text-allign */
+.txt-dir{
+    text-align: right;
+}
+
+.cont-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid #900;
+    background-color: greenyellow;
+}
+
+/* text decoration */
+.underline{
+    text-decoration: underline;
+}
+
+.linetrough{
+    text-decoration: line-through;
+}
+
+.removeund{
+    text-decoration: none;
+    color: #aaa;
+}
