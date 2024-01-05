@@ -230,3 +230,38 @@ h2{
     text-decoration: none;
     color: #aaa;
 }
+
+/* text transform */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.space{
+    letter-spacing: 10px;
+}
+
+/* fonts */
+.serif{
+    font-family: Georgia;
+}
+
+.s-serif{
+    font-family: Helvetica;
+}
+
+.mono{
+    font-family: 'Courier New';
+}
+
+.cur{
+    font-family: cursive;
+}
+
+.fant{
+    font-family: fantasy;
+}
