@@ -30,6 +30,40 @@
                 <option value="devops">DevOps</option>
             </select>
         </div>
+        <!-- 7 - atributo selected -->
+        <div>
+            <label for="contract">Leu os termos de contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="não" selected>Não</option>
+            </select>
+        </div>
+        <!-- 8 - multiplas opções -->
+        <div>
+            <label for="items">Selecionar Items:</label>
+            <select name="items" multiple>
+                <option value="maçã">Maçã</option>
+                <option value="pêra">Pêra</option>
+                <option value="banana">Banana</option>
+                <option value="abacate">Abacate</option>
+                <option value="laranja">Laranja</option>
+            </select>
+        </div>
+        <!-- 9 - textarea -->
+        <div>
+            <label for="comment">Comentário:</label>
+            <textarea name="comment"></textarea>
+        </div>
+        <!-- 10 - fieldset e legend-->
+        <div>
+            <fieldset>
+                <legend>Preencher Informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Apelido:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
 
         <!-- 5 - envio de from -->
         <input type="submit" value="Enviar">
