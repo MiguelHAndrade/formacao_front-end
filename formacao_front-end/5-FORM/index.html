@@ -71,12 +71,72 @@
             <input type="text" list="flavors" name="flavor">
 
             <datalist id="flavors">
-                <option value="cereja">Cereja</option>
-                <option value="morango">Morango</option>
-                <option value="banana">Banana</option>
-                <option value="pessego">Pessego</option>
+                <option value="Cereja"></option>
+                <option value="Morango"></option>
+                <option value="Banana"></option>
+                <option value="Chocolate"></option>
+                <option value="Baunilha"></option>
             </datalist>
         </div>
+
+        <!-- 12 - password -->
+        <div>
+            <label for="password">Insira a sua senha:</label>
+            <input type="password" name="password">
+        </div>
+
+        <!-- 14 - radio button -->
+        <div>
+             <label for="car_model">Escolha o modelo do carro:</label>
+             <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">BMW</label>
+             </div>
+             <div class="radio">
+                <input type="radio" value="mercedes" name="car_model">
+                <label for="mercedes">Mercedes</label>
+             </div>
+             <div class="radio">
+                <input type="radio" value="audi" name="car_model">
+                <label for="audi">Audi</label>
+             </div>
+             <div class="radio">
+                <input type="radio" value="toyota" name="car_model">
+                <label for="toyota">Toyota</label>
+             </div>
+        </div>
+
+        <!-- 15 - checkbox -->
+        <div>
+            <label for="optionals">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="big_tires">Peneus Grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="turbo">
+                <label for="turbo">Turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="hybrid">
+                <label for="hibrid">Híbrido</label>
+            </div>
+        </div>
+
+        <!-- 16 - datas -->
+        <div>
+            <label for="birthday">Data de Nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <!-- 17 - arquivos -->
+        <div>
+            <label for="image">Insira a sua Imagem:</label>
+            <input type="file" name="image">
+        </div>
+
+        <!-- 13 - reset from -->
+        <input type="reset" value="Limpar">
 
         <!-- 5 - envio de from -->
         <input type="submit" value="Enviar">
