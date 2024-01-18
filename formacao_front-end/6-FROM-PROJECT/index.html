@@ -7,7 +7,107 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <h2>Registe o seu veículo para vender mais rapidamente!</h2>
+    </header>
+    <div class="container">
+        <h2>Formúlário</h2>
+
+        <h1>Venda fácilmente o seu carro</h1>
+
+        <p>Descreva as características e marque os extras que ele possui</p>
+
+        <div class="lbl">
+            <label for="title">Título do anúncio: <a class="red">*</a></label>
+            <input type="text" placeholder="Um título para anunciar o seu carro" name="title" required>
+        </div>
+
+        <div class="lbl">
+            <label for="price">Preço: <a class="red">*</a></label>
+            <input type="text" placeholder="Defina o preço" name="price" required>
+        </div>
+
+        <div class="lbl">
+            <label for="discription">Descrição: <a class="red">*</a></label>
+            <textarea placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão" name="discription" required></textarea>
+        </div>
+
+        <div class="lbl">
+            <label for="brand">Marca: <a class="red">*</a></label>
+            <input type="text" placeholder="Digite a marca do veículo" name="brand" required>
+        </div>
+
+        <div class="lbl">
+            <label for="model">Modelo: <a class="red">*</a></label>
+            <input type="text" placeholder="Digite o modelo do veículo" name="model" required>
+        </div>
+
+        <div class="lbl">
+            <label for="km">Kilometragem: <a class="red">*</a></label>
+            <input type="text" placeholder="Digite a kilometragem do veículo" name="km" required>
+        </div>
+
+        <div class="lbl">
+            <label for="date">Data de compra: <a class="red">*</a></label>
+            <input type="date" placeholder="Digite a kilometragem do veículo" name="date" required>
+        </div>
+
+        <div class="lbl">
+            <label for="transmission">Tipo de transmissão: <a class="red">*</a></label>
+            <div class="radio">
+                <input type="radio" value="manual" name="transmission">
+                <label for="manual">Manual</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="automatico" name="transmission">
+                <label for="automatico">Automático</label>
+            </div>
+        </div>
+
+        <div class="lbl">
+            <label for="extras">Extras:</label>
+            <div class="radio">
+                <input type="checkbox" value="airbag" name="extras[]">
+                <label for="airbag">Airbag</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="alarme" name="extras[]">
+                <label for="alarme">Alarme</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="air_conditioning" name="extras[]">
+                <label for="air_conditioning">Ar Condicionado</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="back_cam" name="extras[]">
+                <label for="back_cam">Câmera na Traseira</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="gps" name="extras[]">
+                <label for="gps">GPS</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="keyless" name="extras[]">
+                <label for="keyless">Partida Keyless</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="smartphone" name="extras[]">
+                <label for="smartphone">Integração com Smartphone</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="leather_seat" name="extras[]">
+                <label for="leather_seat">Bancos de Pele</label>
+            </div>
+        </div>
+
+        <div class="lbl">
+            <label for="image">Fotos do carro: <a class="red">*</a></label>
+            <input type="file" name="image" required>
+        </div>
+
+        <input type="submit" value="Registar">
+    
+    </div>
     
 </body>
 </html>
