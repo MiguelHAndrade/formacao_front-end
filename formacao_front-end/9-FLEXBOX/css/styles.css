@@ -122,3 +122,71 @@ body{
 #three{
     order: 3;
 }
+
+/* grow */
+.grow{
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+
+.grow .big{
+    flex: 2;
+}
+
+/* basis */
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .big{
+    flex-grow: 1;
+}
+
+/* shrink */
+.shrink{
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small{
+    flex-shrink: 2;
+}
+
+/* flex shorthand */
+.shorthand{
+    display: flex;
+}
+
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .diffrent{
+    flex: 3 1 400px;
+}
+
+/* autoalinhamento */
+.auto-alignment{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 10px solid palevioletred;
+}
+
+.auto-alignment .diffrent{
+    align-self: center;
+}
