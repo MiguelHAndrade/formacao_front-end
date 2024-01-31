@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda o seu carro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h2>Registe o seu veículo para vender mais rapidamente!</h2>
+    </header>
+    <div class="container">
+        <div class="form-header">
+            <h2 class="main-title">Formulário</h2>
+        </div>
+        <div class="form-body">
+            <h1 class="title-h1">Venda fácilmente o seu carro!</h1>
+
+            <p>Descreva as características e marque os extras que ele possui</p>
+
+            <div class="box-input">
+                <label for="title">Título do anúncio: <span class="red">*</span></label>
+                <input type="text" class="block" placeholder="Um título para anunciar o seu carro" name="title" id="title" minlength="1" maxlength="30" required>
+            </div>
+
+            <div class="box-input">
+                <label for="price">Preço: <span class="red">*</span></label>
+                <input type="text" class="block" placeholder="Defina o preço" name="price" id="price" required>
+            </div>
+
+            <div class="box-input">
+                <label for="discription">Descrição: <span class="red">*</span></label>
+                <textarea class="block" placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão" name="discription" id="discription" minlength="1" maxlength="100" required></textarea>
+            </div>
+
+            <div class="box-input">
+                <label for="brand">Marca: <span class="red">*</span></label>
+                <input type="text" class="block" placeholder="Digite a marca do veículo" name="brand" id="brand" required>
+            </div>
+
+            <div class="box-input">
+                <label for="model">Modelo: <span class="red">*</span></label>
+                <input type="text" class="block" placeholder="Digite o modelo do veículo" name="model" id="model" required>
+            </div>
+
+            <div class="box-input">
+                <label for="km">Kilometragem: <a class="red">*</a></label>
+                <input type="text" class="block" placeholder="Digite a kilometragem do veículo" name="km" id="km" required>
+            </div>
+
+            <div class="box-input">
+                <label for="date">Data de compra: <a class="red">*</a></label>
+                <input type="date" class="block" name="date" id="date" required>
+            </div>
+
+            <div class="box-input">
+                <p>Tipo de transmissão: <span class="red">*</span></p>
+                <input type="radio" name="transmission" id="manual">
+                <label for="manual" class="space">Manual</label>
+                <input type="radio" name="transmission" id="automatico">
+                <label for="automatico">Automático</label> 
+            </div>
+
+            <div class="extras-box">
+                <p>Extras:<p>
+                <ul class="extras-list">
+                    <li>
+                        <input type="checkbox" id="airbag" value="airbag" name="extras[]">
+                        <label for="airbag">Airbag</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="alarme" value="alarme" name="extras[]">
+                        <label for="alarme">Alarme</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="air_conditioning" value="air_conditioning" name="extras[]">
+                        <label for="air_conditioning">Ar Condicionado</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="back_cam" value="back_cam" name="extras[]">
+                        <label for="back_cam">Câmera na Traseira</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="extras-box">
+                <ul class="extras-list">
+                    <li>
+                        <input type="checkbox" id="gps" value="gps" name="extras[]">
+                        <label for="gps">GPS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="keyless" value="keyless" name="extras[]">
+                        <label for="keyless">Partida Keyless</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="smartphone" value="smartphone" name="extras[]">
+                        <label for="smartphone">Integração com Smartphone</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="leather_seat" value="leather_seat" name="extras[]">
+                        <label for="leather_seat">Bancos de Pele</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-input">
+                <p>Fotos do carro: <span class="red">*</span></p>
+                <input type="file" multiple accept="image/png, image/jpeg" name="image" id="image" required>
+            </div>
+
+            <div class="center">
+                <input type="submit" value="Registar" class="btn-submit margin-inp">
+                <input type="reset" value="Limpar" class="btn-submit margin-inp">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

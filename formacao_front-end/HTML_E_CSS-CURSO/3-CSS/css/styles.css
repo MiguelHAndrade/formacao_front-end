@@ -1,0 +1,434 @@
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color: green;
+}
+
+/* classes */
+
+.paragraph{
+    background-color: #000;
+    color: lime;
+}
+
+/* ids */
+
+#exclusive-title{
+    background-color: blueviolet;
+    color: yellow;
+    padding: 10px;
+}
+
+/* ordem das regras */
+h2{
+    border-bottom: 2px solid red;
+}
+
+.titulo{
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 4px solid green;
+}
+
+/* Nome de cores */
+.color-name{
+    color: #165a5a;
+}
+
+/* HEX */
+.hex{
+    color: #991033;
+}
+
+/* mais sobre hex */
+
+/* Red / Green / Blue */
+/* Escala HEX: {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F} // Escuro >> Claro */
+.simple-hex{
+    color: #913;
+}
+
+.simple-hex-2{
+    color: #3E3;
+    background-color: #060;
+}
+
+/* RGB */
+.rgb{
+    color: rgb(0, 255, 0);
+}
+
+/* RGBa */
+.rgba{
+    color: rgba(55, 33, 233, 0.25);
+}
+
+/* HSL */
+.hsl{
+    color: hsl(330, 70%, 50%);
+}
+
+/* background-color */
+.bg{
+    background-color: #3E3;
+}
+
+/* opcaidade no bg */
+.bg-op{
+    background-color: #00B;
+    opacity: 0.2;
+}
+
+/* RGBa com opacidade */
+.bg-op2{
+    background-color: rgba(180, 200, 15, 0.4)
+}
+
+/* bg image */
+.bg-image{
+    background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+    color: #CCC;
+    padding: 10px;
+}
+
+/* centrar imagem gb */
+.not-cent,
+.cent-bg{
+    height: 400px;
+    width: 400px;
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/4B20/production/_131523291_gettyimages-1372307856.jpg);
+}
+
+.cent-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+/* largura e altura */
+.h-w{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+/* padding */
+.no-pad,
+.pad{
+    background-color: #000;
+    color: #FFF;
+}
+
+.pad{
+    background-color: #aaa;
+    padding: 20px;
+}
+
+/* padding individual */
+.pad-individual{
+    background-color: #00B;
+    color: #3E3;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+
+/* shorthand padding */
+.pad-ind{
+    background-color: #CCC;
+    padding: 6px 12px 18px 24px;
+}
+
+/* padding com width */
+.no-borderbox{
+    background-color: #00B;
+    color: #3E3;
+    width: 400px;
+    padding: 50px;
+}
+
+.borderbox{
+    background-color: #3E3;
+    color: #00B;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* border */
+.border{
+    border: 2px double purple;
+    padding: 10px;
+    width: 40px;
+}
+
+/* border individual */
+.border-left{
+    border-left: 3px solid orange;
+    background-color: olive;
+    padding: 25px;
+}
+
+.border-btm{
+    border-bottom: 5px dotted darkmagenta;
+    background-color: lightsalmon;
+    padding: 10px;
+}
+
+/* border radius */
+.rounded{
+    border: 4px solid #00F;
+    background-color: #000;
+    color: #55D;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* margem */
+.mrgn{
+    margin: 15px;
+    background-color: #00B;
+    color: #FFF;
+}
+
+/* box model */
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #0F0;
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+}
+
+/* text-allign */
+.txt-dir{
+    text-align: right;
+}
+
+.cont-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid #900;
+    background-color: greenyellow;
+}
+
+/* text decoration */
+.underline{
+    text-decoration: underline;
+}
+
+.linetrough{
+    text-decoration: line-through;
+}
+
+.removeund{
+    text-decoration: none;
+    color: #aaa;
+}
+
+/* text transform */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.space{
+    letter-spacing: 10px;
+}
+
+/* fonts */
+.serif{
+    font-family: Georgia;
+}
+
+.s-serif{
+    font-family: Helvetica;
+}
+
+.mono{
+    font-family: 'Courier New';
+}
+
+.cur{
+    font-family: cursive;
+}
+
+.fant{
+    font-family: fantasy;
+}
+
+/* font style */
+.italic{
+    font-style: italic;
+}
+
+.oblic{
+    font-style: oblique;
+}
+
+/* font weight */
+.thin, .bold, .bolder{
+    font-family: Helvetica;
+}
+
+.thin{
+    font-weight: 100;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.bolder{
+    font-weight: 900;
+}
+
+/* font size */
+.small{
+    font-size: 10px;
+}
+
+.big{
+    font-size: 60px;
+}
+
+/* display */
+.inline-box{
+    width: 50px;
+    height: 50px;
+    background-color: #0F0;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block{
+    background-color: #00F;
+    display: block;
+    margin: 10px;
+}
+
+/* hide elements */
+.invisible{
+    display: none;
+}
+
+/* static */
+ .static{
+    position: static;
+    background-color: #92F;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+ }
+
+ /* relative */
+ .relative{
+    position: relative;
+    background-color: #22F;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    top: 100px;
+    left:  40px;
+ }
+
+ /* absolute */
+ .absolute{
+    position: absolute;
+    background-color: #952;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    top: 5px;
+    right: 5px;
+ }
+
+ /* relative with absolute */
+ .relative-cont{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #F00;
+    margin-top: 50px;
+    position: relative;
+ }
+
+ .absolute-1,
+ .absolute-2{
+    width: 50px;
+    height: 50px;
+    background-color: #0F0;
+    position: absolute;
+ }
+
+ .absolute-1{
+    top: 5px;
+    left: 5px;
+ }
+
+ .absolute-2{
+    bottom: 5px;
+    right: 5px;
+ }
+
+ /* fixed */
+ .fixed{
+    width: 100px;
+    height: 100px;
+    background-color: #900;
+    border: 1px solid #00F;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+ }
+
+ /* sticky */
+ .sticky{
+    width: 100px;
+    height: 100px;
+    background-color: #4B5;
+    border: 1px solid #D55;
+    position: sticky;
+    top: 10px;
+ }
+
+ /* z-index */
+ .absolute-3,
+ .absolute-4,
+ .absolute-5{
+    width: 50px;
+    height: 50px;
+    background-color: #0DC;
+    position: absolute;
+ }
+
+ .absolute-3{
+    top: 0;
+    left: 0;
+    z-index: 3;
+ }
+
+ .absolute-4{
+    top: 10px;
+    left: 10px;
+    background-color: #55D;
+    z-index: 2;
+ }
+
+ .absolute-5{
+    top: 40px;
+    left: 40px;
+    background-color: #D55;
+    z-index: 1;
+ }
