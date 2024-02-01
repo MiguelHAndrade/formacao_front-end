@@ -1,1 +1,0 @@
-console.log('Testar JS v2!')
