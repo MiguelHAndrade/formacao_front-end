@@ -90,3 +90,21 @@ console.log(5 > 2 || 'João' === 1)
 console.log(5 > 50 || 5 > 100)
 console.log(!true)
 console.log(!5 > 2)
+
+console.log('\n////////// ////////// //////////\n')
+
+// 12 - Empty Values
+console.log(typeof null, typeof undefined)
+console.log(null === undefined)
+console.log(null == undefined)
+console.log(null == false)
+console.log(undefined == false)
+
+console.log('\n////////// ////////// //////////\n')
+
+// 13 - Conversão de tipo automática
+console.log(5 * null)
+console.log('abc' * 'aei')
+console.log('10' + 1)
+console.log('10' - 1)
+
