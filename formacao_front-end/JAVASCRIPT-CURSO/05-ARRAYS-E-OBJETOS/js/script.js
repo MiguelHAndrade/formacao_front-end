@@ -325,3 +325,34 @@ console.log(reverseTest)
 reverseTest.reverse()
 
 console.log(reverseTest)
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 18 - trim
+const trimTest = ' Teste \n '
+
+console.log(trimTest)
+console.log(trimTest.trim())
+console.log(trimTest.length)
+console.log(trimTest.trim().length)
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 19 - padStart
+const testPadStart = '1'
+
+const newNumber = testPadStart.padStart(4, '0')
+
+console.log(testPadStart)
+console.log(newNumber)
+
+const testPadEnd = newNumber.padEnd(10, '0')
+const testPadEnd2 = newNumber.padEnd(3*5+newNumber.length, 'Olá')
+
+console.log(newNumber)
+console.log(testPadEnd)
+console.log(testPadEnd2)
