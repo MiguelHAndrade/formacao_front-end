@@ -158,3 +158,152 @@ const jeff = new CaoClass('Jeff', 'Lavrador')
 
 console.log(jeff)
 console.log(Object.getPrototypeOf(jeff))
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 10 - mais sobre classes
+class Camiao{
+    constructor(eixos, cor){
+        this.eixos = eixos
+        this.cor = cor
+    }
+
+    descreverCamiao(){
+        console.log(`Este camião tem ${this.eixos} eixos e é da cor ${this.cor}`)
+    }
+}
+
+const scania = new Camiao(6, 'Vermelho')
+
+console.log(scania)
+
+scania.descreverCamiao()
+
+Camiao.motor = 4
+
+const c2 = new Camiao(4, 'Preto')
+
+console.log(c2)
+console.log(c2.motor)
+
+Camiao.prototype.motor = 4.0
+
+const c3 = new Camiao(6, 'Azul')
+
+console.log(c3)
+console.log(c3.motor)
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 11 - override
+class Humano {
+    constructor(nome, idade){
+        this.nome = nome
+        this.idade = idade
+    }
+}
+
+const miguel = new Humano('Miguel', 27)
+
+console.log(miguel)
+console.log(Humano.prototype.idade)
+
+Humano.prototype.idade = 'Não definida'
+
+console.log(miguel.idade)
+console.log(Humano.prototype.idade)
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 12 - symbol
+class Aviao{
+    constructor(marca, turbina){
+        this.marca = marca
+        this.turbina = turbina
+    }
+}
+
+const asas = Symbol()
+const pilotos = Symbol()
+
+Aviao.prototype[asas] = 2
+Aviao.prototype[pilotos] = 3
+
+const boeing = new Aviao('Boeing', 10)
+
+console.log(boeing)
+console.log(boeing[asas])
+console.log(boeing[pilotos])
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 13 - getters e setters
+class Post{
+    constructor(titulo, descricao, tags){
+        this.titulo = titulo
+        this.descricao = descricao
+        this.tags = tags
+    }
+
+    get exibirTitulo(){
+        return `Vocês está a ler: ${this.titulo}`
+    }
+
+    set adicionarTags(tags){
+        const tagsArray = tags.split(', ')
+        this.tags = tagsArray
+    }
+}
+
+const myPost = new Post('Algum post', 'é um post de programação')
+
+console.log(myPost)
+console.log(myPost.exibirTitulo)
+
+myPost.adicionarTags = 'programação, javascript, js'
+
+console.log(myPost)
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 14 - herança
+class Mamifero{
+    constructor(patas){
+        this.patas = patas
+    }
+}
+
+class Lobo extends Mamifero{
+    constructor(patas, nome){
+        super(patas, patas)
+        this.nome = nome
+    }
+}
+
+const shark = new Lobo(4, 'Shark')
+
+console.log(shark)
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 15 - instanceof
+console.log(shark instanceof Lobo)
+console.log(shark instanceof Mamifero)
+console.log(shark instanceof Post)
+
+console.log(Lobo instanceof Mamifero)
+console.log(new Lobo(4, 'teste') instanceof Mamifero)
+
+console.log(new Post('a', 'b') instanceof Aviao)
