@@ -110,3 +110,66 @@ document.addEventListener('mousemove', (e) => {
     // console.log(`No eixo X: ${e.x}`)
     // console.log(`No eixo Y: ${e.y}`)
 })
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 9 - eventos de scroll
+window.addEventListener('scroll', (e) => {
+    if(window.pageYOffset > 200){
+        console.log('Passamos de 200px')
+    }
+})
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 10 - evento de focus
+const input = document.querySelector('#my-input')
+
+input.addEventListener('focus', (e) => {
+    console.log('Entou no input!')
+})
+
+input.addEventListener('blur', (e) => {
+    console.log('Saiu do input!')
+})
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 11 - evento de load
+window.addEventListener('load', (e) => {
+    console.log('A página carregou')
+})
+
+window.addEventListener('beforeunload', (e) => {
+    e.preventDefault()
+    e.returnValue = ''
+})
+
+
+console.log('\n////////// ////////// //////////\n')
+
+
+// 12 - debounce
+const debounce = (f, delay) => {
+    let timeout
+    return (...arguments) => {
+        if(timeout){
+            clearTimeout(timeout)
+        }
+
+        timeout = setTimeout(() => {
+            f.apply(arguments)
+        }, delay)
+    }
+}
+
+window.addEventListener('mousemove', debounce(() => {
+    console.log('A executar a cada 400ms')
+    }, 400)
+)   
